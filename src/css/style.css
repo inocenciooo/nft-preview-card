@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --text-color: hsl(215, 51%, 70%);
+    --nft-color: hsl(178, 100%, 50%);
+    --main-background-color: hsl(217, 54%, 11%);
+    --card-background-color: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --name-color: hsl(0, 0%, 100%)
+}
+
+html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-background-color);
+    font-family: "Outfit";
+}
+
+.card {
+    background-color: var(--card-background-color);
+    color: var(--name-color);
+    width: 46.5rem;
+    height: 80rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+
+
+.info .informations h1{
+    font-size: 2.9rem;
+    font-weight: 650;
+    color: var(--name-color);
+}
+
+.description{
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin-top: 2.3rem;
+    font-weight: 300;
+    line-height: 3.3rem;
+}
+
+.nft{
+    color: var(--text-color);
+    font-size: 2.2rem;
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nft .value{
+    color: var(--nft-color);
+    padding-left: 2rem;
+}
+
+.nft .value::before{
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    background-image: url(../images/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: .2em;
+}
+
+
+.nft .time::before{
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    background-image: url(../images/icon-clock.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+/*.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+*/

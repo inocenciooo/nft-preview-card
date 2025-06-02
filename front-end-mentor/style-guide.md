@@ -13,15 +13,15 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Blue 500: hsl(215, 51%, 70%)
-- Cyan 400: hsl(178, 100%, 50%)
+- text-color: hsl(215, 51%, 70%) 
+- nft-color: hsl(178, 100%, 50%)
 
 ### Neutral
 
-- Blue 950 (main BG): hsl(217, 54%, 11%)
-- Blue 900 (card BG): hsl(216, 50%, 16%)
-- Blue 800 (line): hsl(215, 32%, 27%)
-- White: hsl(0, 0%, 100%)
+- main-background-color: hsl(217, 54%, 11%)
+- card-background-color: hsl(216, 50%, 16%)
+- line-color: hsl(215, 32%, 27%)
+- name-color: hsl(0, 0%, 100%)
 
 ## Typography
 

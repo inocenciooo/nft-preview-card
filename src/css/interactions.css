@@ -1,0 +1,17 @@
+.informations h1,
+.user p,
+.user p span {
+    transition: .3s ease;
+}
+
+
+.informations h1:hover,
+.user p:hover,
+.user p:hover span {
+    color: var(--nft-color);
+    cursor: pointer;
+}
+
+.image:hover .eye {
+    opacity: 100%;
+}

@@ -21,7 +21,6 @@ html {
 
 img {
     width: 100%;
-    border-radius: 1rem;
 }
 
 body {
@@ -40,65 +39,113 @@ body {
     width: 46.5rem;
     height: 80rem;
     padding: 3rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
+    margin: 20px;
+}
+.card .image{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.3rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.image .eye{
+    position: absolute;
+    height: 6.2rem;
+    width: 6.2rem;
+    top: 43.3%;
+    right: 42.3%;
+    background-image: url(../images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.info{
+    font-size: 2.5rem;
+}
+.info .informations {
+    margin: 0 0.1em 0 0.1em;
 }
 
 
-
-.info .informations h1{
+.info .informations h1 {
     font-size: 2.9rem;
     font-weight: 650;
     color: var(--name-color);
 }
 
-.description{
+.description {
     color: var(--text-color);
-    font-size: 2.5rem;
     margin-top: 2.3rem;
     font-weight: 300;
     line-height: 3.3rem;
 }
 
-.nft{
+.nft {
     color: var(--text-color);
     font-size: 2.2rem;
     margin-top: 3.5rem;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    padding-bottom: 3rem;
+    border-bottom: 1.2px solid var(--line-color)
 }
 
-.nft .value{
+.nft .value {
     color: var(--nft-color);
-    padding-left: 2rem;
 }
 
-.nft .value::before{
+.nft .value::before,
+.nft .time::before {
     content: "";
-    height: 2rem;
-    width: 2rem;
+    height: 2.3rem;
+    width: 2.3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: -0.15em;
+}
+
+.nft .value::before {
     background-image: url(../images/icon-ethereum.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    left: 0;
-    top: .2em;
 }
 
-
-.nft .time::before{
-    content: "";
-    height: 2rem;
-    width: 2rem;
+.nft .time::before {
     background-image: url(../images/icon-clock.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    margin-right: 1rem;
 }
 
+.user{
+    padding: 2rem 0 0 0;
+    font-size: 2.2rem;
+}
+.user p{
+    color: var(--text-color);
+}
 
+.user p::before{
+    content: "";
+    height: 4.2rem;
+    width: 4.2rem;
+    background-image: url(../images/image-avatar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    border: 1px solid var(--name-color);
+    border-radius: 100%;
+    vertical-align: -.6em;
+    margin-right: 2rem;
+}
+
+.user p span{
+    color: var(--name-color);
+}
 
 /*.attribution {
     font-size: 11px;

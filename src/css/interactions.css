@@ -6,10 +6,18 @@
 
 
 .informations h1:hover,
-.user p:hover,
-.user p:hover span {
+.user span:hover {
     color: var(--nft-color);
     cursor: pointer;
+}
+
+.image:hover {
+    cursor: pointer;
+    background-color: var(--nft-color);
+}
+
+.image:hover img {
+    opacity: 50%;
 }
 
 .image:hover .eye {

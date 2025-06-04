@@ -45,15 +45,21 @@ body {
     gap: 3.2rem;
     margin: 20px;
 }
-.card .image{
+
+.card .image {
     display: flex;
     flex-direction: column;
     border-radius: 1.3rem;
     overflow: hidden;
     position: relative;
+    transition: 0.3s ease;
 }
 
-.image .eye{
+.image img{
+    transition: 0.3s ease;
+}
+
+.image .eye {
     position: absolute;
     height: 6.2rem;
     width: 6.2rem;
@@ -66,9 +72,10 @@ body {
     transition: 0.3s ease;
 }
 
-.info{
+.info {
     font-size: 2.5rem;
 }
+
 .info .informations {
     margin: 0 0.1em 0 0.1em;
 }
@@ -78,6 +85,7 @@ body {
     font-size: 2.9rem;
     font-weight: 650;
     color: var(--name-color);
+    display: inline-block;
 }
 
 .description {
@@ -121,15 +129,16 @@ body {
     margin-right: 1rem;
 }
 
-.user{
+.user {
     padding: 2rem 0 0 0;
     font-size: 2.2rem;
 }
-.user p{
+
+.user p {
     color: var(--text-color);
 }
 
-.user p::before{
+.user p::before {
     content: "";
     height: 4.2rem;
     width: 4.2rem;
@@ -143,17 +152,6 @@ body {
     margin-right: 2rem;
 }
 
-.user p span{
+.user p span {
     color: var(--name-color);
 }
-
-/*.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
-*/
